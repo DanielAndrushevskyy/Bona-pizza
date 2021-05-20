@@ -6,6 +6,7 @@ import Button from '../Button';
 function PizzaBlock({ id, name, imageUrl, price, types, sizes, onClickAddPizza, addedCount }) {
   const availableTypes = ['тонкое', 'традиционное'];
   const availableSizes = [26, 30, 40];
+
   const [activeType, setActiveType] = React.useState(types[0]);
   const [activeSize, setActiveSize] = React.useState(0);
 
@@ -63,10 +64,7 @@ function PizzaBlock({ id, name, imageUrl, price, types, sizes, onClickAddPizza, 
       </div>
       <div className="pizza-block__bottom">
         <div className="pizza-block__price">от {price} ₽</div>
-        <Button
-          onClick={onAddPizza}
-          className="button-add"
-          outline>
+        <Button onClick={onAddPizza} className="button--add" outline>
           <svg
             width="12"
             height="12"
@@ -85,11 +83,22 @@ function PizzaBlock({ id, name, imageUrl, price, types, sizes, onClickAddPizza, 
     </div>
   );
 }
-PizzaBlock.PropTypes = {
-  onAddPizza: PropTypes.func,
+
+PizzaBlock.propTypes = {
+  name: PropTypes.string,
+  imageUrl: PropTypes.string,
+  price: PropTypes.number,
+  types: PropTypes.arrayOf(PropTypes.number),
+  sizes: PropTypes.arrayOf(PropTypes.number),
+  onClickAddPizza: PropTypes.func,
   addedCount: PropTypes.number,
 };
 
-PizzaBlock.defaultProps = {};
+PizzaBlock.defaultProps = {
+  name: '---',
+  price: 0,
+  types: [],
+  sizes: [],
+};
 
 export default PizzaBlock;
