@@ -6,7 +6,7 @@ import { setCategory, setSortBy } from '../redux/actions/filters';
 import { fetchPizzas } from '../redux/actions/pizzas';
 import { addPizzaToCart } from '../redux/actions/cart';
 
-const categoryNames = ['Мясні', 'Вегетаріанські', 'Гриль', 'Гострі', 'Закриті'];
+const categoryNames = ['Мясні', 'Вегетаріанські', 'Гриль', 'Гострі', 'Фруктові'];
 const sortIems = [
   { name: 'популярності', type: 'popular', order: 'desc' },
   { name: 'ціні', type: 'price', order: 'desc' },
