@@ -6,11 +6,11 @@ import { setCategory, setSortBy } from '../redux/actions/filters';
 import { fetchPizzas } from '../redux/actions/pizzas';
 import { addPizzaToCart } from '../redux/actions/cart';
 
-const categoryNames = ['Мясные', 'Вегетарианская', 'Гриль', 'Острые', 'Закрытые'];
+const categoryNames = ['Мясні', 'Вегетаріанські', 'Гриль', 'Гострі', 'Закриті'];
 const sortIems = [
-  { name: 'популярности', type: 'popular', order: 'desc' },
-  { name: 'цене', type: 'price', order: 'desc' },
-  { name: 'алфавиту', type: 'name', order: 'asc' },
+  { name: 'популярності', type: 'popular', order: 'desc' },
+  { name: 'ціні', type: 'price', order: 'desc' },
+  { name: 'алфавіту', type: 'name', order: 'asc' },
 ];
 
 function Home() {
@@ -53,7 +53,7 @@ const handleAddPizzaToCart = (obj) => {
           onClickSortType={onSelectSortType}
         />
       </div>
-      <h2 className="content__title">Все пиццы</h2>
+      <h2 className="content__title">Всі піци</h2>
       <div className="content__items">
         {isLoaded
           ? items.map((obj) => (
