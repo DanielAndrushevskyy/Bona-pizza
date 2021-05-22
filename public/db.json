@@ -269,6 +269,66 @@
       "price": 600,
       "category": 0,
       "rating": 5
+    },
+    {
+      "id": 27,
+      "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/fc4d663d-fb00-48ea-8391-7a4648553f25.jpg",
+      "name": "Сир-курка",
+      "types": [1],
+      "sizes": [26, 40],
+      "price": 375,
+      "category": 0,
+      "rating": 5
+    },
+    {
+      "id": 28,
+      "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/d7c37f8b331747b284ef537cc2c22c76_292x292.jpeg",
+      "name": "Чиззи чеддер",
+      "types": [1],
+      "sizes": [26, 40],
+      "price": 375,
+      "category": 2,
+      "rating": 5
+    },
+    {
+      "id": 29,
+      "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/e60c46b2b3b044a9b01ea2281030c680_292x292.jpeg",
+      "name": "Курка блю-чіз",
+      "types": [0, 1],
+      "sizes": [26, 30, 40],
+      "price": 425,
+      "category": 0,
+      "rating": 6
+    },
+    {
+      "id": 30,
+      "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/2d674f990a794efe8106c4a03b58310d_292x292.jpeg",
+      "name": "Бекон-пепероні",
+      "types": [1],
+      "sizes": [26, 30, 40],
+      "price": 425,
+      "category": 2,
+      "rating": 4
+    },
+    {
+      "id": 31,
+      "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/Pizza/ru-RU/2822916b-039c-4dfc-916a-73ca0daa9320.jpg",
+      "name": "Курка ранч",
+      "types": [0, 1],
+      "sizes": [26, 30],
+      "price": 225,
+      "category": 0,
+      "rating": 8
+    },
+    {
+      "id": 32,
+      "imageUrl": "https://dodopizza-a.akamaihd.net/static/Img/Products/0fbe5a8c798d4c548c193c34ffb1b785_292x292.jpeg",
+      "name": "Подвійна курка",
+      "types": [1],
+      "sizes": [26, 30],
+      "price": 125,
+      "category": 0,
+      "rating": 3
     }
   ]
   }
