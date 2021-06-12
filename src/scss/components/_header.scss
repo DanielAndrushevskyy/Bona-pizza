@@ -58,30 +58,31 @@
 }
 
 .pizza__center {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   background-color: #fff;
-  border-radius: 30%;
-  box-shadow: 0 0 10px 0 rgba(108, 108, 108, 0.3);
+  border-radius: 50%;
+  box-shadow: 0 0 10px 0 rgba(116, 116, 116, 0.3);
   position: absolute;
   top: -30px;
   left: calc(50% - 30px);
   // transform: translate(-50%, -50%);
-  padding: 3px;
+  padding: 9px;
 }
 
 .contacts__header {
+  margin-top: 18px;
   font-size: 30px;
   color: #181818; 
 }
 
 .contacts__text {
-  font-size: 17px;
-  margin-bottom: 35px;
+  font-size: 19px;
+  margin-bottom: 30px;
   margin-top: 15px;
   color: #636363;
   font-weight: 500;
-  line-height: 142%;
+  line-height: 140%;
 }
 
 .contacts__contacts {
@@ -96,10 +97,10 @@
 }
 
 .contact svg {
-  width: 22px;
-  height: 22px;
-  margin-right: 8px;
-  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+  border-radius: 0%;
 }
 
 .contact h4 {
@@ -107,7 +108,7 @@
   padding: 0;
   cursor: pointer;
   transition: color .2s;
-  font-size: 16px;
+  font-size: 18px;
   color: #181818;
 }
 
@@ -115,7 +116,7 @@
   margin-top: 5px;
   padding: 0;
   color: #8D8D8D;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .contact h4:hover {
@@ -124,4 +125,17 @@
 
 .modal__hidden {
   display: none;
+}
+.header__cart {
+  display: flex;
+  gap: 15px;
+}
+.button__contact {
+  background-color: white !important;
+  color: #181818 !important;
+  font-size: 17px;
+  font-weight: 600;
+}
+.button__contact:hover {
+  color: #FE5F1E !important; 
 }
