@@ -2,32 +2,36 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Nunito", sans-serif;
 }
 
-button {
+.button__aut {
   border: none;
   outline: none;
   width: 100%;
   padding: 15px 0;
-  color: #fff;
+  color: #000;
   font-size: 16px;
   letter-spacing: 1px;
-  background: #603bbb;
+  background: #f8f8f8;
   cursor: pointer;
+  border-radius: 5px;
+  font-weight: 800;
 }
 
 .login {
+  /* overflow: hidden; */
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 1100px; */
   padding: 0 20px;
-  background: #e9e9e9;
-  background: url("N2.png") 100% no-repeat;;
+  background: #fcd7ae;
+  /* background: url("N2.png") 100% 50%no-repeat; */
   background-size: cover;
   display: flex;
+  
 }
 
 .login .loginContainer {
+  border-radius: 25px;
   padding: 60px;
   margin: auto;
   width: 100%;
@@ -36,22 +40,24 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: radial-gradient(
+  background-color: #181818;
+  /* background: radial-gradient(
     ellipse at left bottom,
-    rgba(22, 24, 47, 1) 0%,
-    rgba(38, 20, 72, 0.9) 59%,
-    rgba(17, 27, 75, 0.9) 100%
-  );
-  box-shadow: 0 50px 70px -20px rgba(0, 0, 0, 0.8);
+    rgb(255, 134, 63) 0%,
+    rgba(219, 92, 53, 0.9) 100%,
+    rgba(223, 93, 7, 0.9) 100%
+  ); */
+  box-shadow: 0 50px 90px -20px rgba(39, 39, 39, 0.8);
 }
 
 .login .loginContainer label {
-  color: white;
+  color: rgb(255, 255, 255);
   padding-top: 18px;
-  margin: 14px 0;
+  margin: 15px 0;
   display: block;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1;
+  font-weight: 600;
 }
 
 .login .loginContainer input {
@@ -60,7 +66,7 @@ button {
   outline: none;
   font-size: 19px;
   padding: 10px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(228, 222, 222, 0.1);
   color: #fff;
   letter-spacing: 1px;
 }

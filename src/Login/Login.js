@@ -17,7 +17,7 @@ const Login = (props) => {
    return(
       <section className="login">
          <div className="loginContainer">
-            <label>Username</label>
+            <label>Ім'я користувача</label>
             <input type="text" 
             autoFocus 
             required 
@@ -25,7 +25,7 @@ const Login = (props) => {
             onChange={e => setEmail(e.target.value)}
             />
             <p className="errorMsg">{emailError}</p>
-            <label>Password</label>
+            <label>Пароль</label>
             <input 
             type="password" 
             required 
@@ -36,13 +36,13 @@ const Login = (props) => {
             <div className="btnContainer">
                {hasAccount ? (
                   <>
-                  <button onClick={handleLogin}>Sign in</button>
-                  <p>Don't have an account ? <span onClick={() => setHasAccount(!hasAccount)}>Sign up</span></p>
+                  <button className="button__aut" onClick={handleLogin}>Увійти</button>
+                  <p>Не маєте облікового запису ?<span onClick={() => setHasAccount(!hasAccount)}>Зареєструватися</span></p>
                   </>
                ) : (
                   <>
-                  <button onClick={handleSignup}>Sign up</button>
-                  <p>Have an account ? <span onClick={() => setHasAccount(!hasAccount)}>Sign in</span></p>
+                  <button className="button__aut" onClick={handleSignup}>Зареєструватися</button>
+                  <p>Маєте обліковий запис ?<span onClick={() => setHasAccount(!hasAccount)}>Увійти</span></p>
                   </>
                )}
             </div>
